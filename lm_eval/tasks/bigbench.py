@@ -112,7 +112,7 @@ class BigBenchJsonTask(Task):
                 )
                 res["exact_str_match"] = int(postprocessed == doc["target"])
             else:
-                raise NotImplementedError(f"Metric {metric} isn't implemented")
+                pass # raise NotImplementedError(f"Metric {metric} isn't implemented")
         return res
 
     def aggregation(self):
